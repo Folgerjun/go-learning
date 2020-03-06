@@ -7,9 +7,9 @@ func main() {
 	arr := []int{21, 32, 12, 33, 34, 34, 87, 24}
 	n := len(arr)
 	fmt.Println("_________没排序前_________\n", arr)
-	for i := 0; i <= n-1; i++ {
+	for i := 0; i < n-1; i++ {
 		fmt.Println("_________第", i+1, "次冒泡_________")
-		for j := i; j <= n-1; j++ {
+		for j := i + 1; j <= n-1; j++ {
 			if arr[i] > arr[j] {
 				temp := arr[i]
 				arr[i] = arr[j]
